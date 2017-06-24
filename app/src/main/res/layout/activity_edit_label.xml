@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.sthakrey.donote.EditLabelActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/mytoolbar"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:elevation="@dimen/action_bar_elevation"
+        android:layout_height="?attr/actionBarSize">
+
+    <android.support.v7.widget.SearchView
+        android:id="@+id/search"
+        android:layout_width="wrap_content"
+        android:searchIcon="@drawable/ic_action_search"
+        android:layout_height="wrap_content">
+
+    </android.support.v7.widget.SearchView>
+    </android.support.v7.widget.Toolbar>
+
+<android.support.v7.widget.RecyclerView
+        android:id="@+id/labelrecyclerview"
+        android:layout_marginTop="?actionBarSize"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_height="wrap_content">
+    </android.support.v7.widget.RecyclerView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_addlabel"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        app:pressedTranslationZ="@dimen/fab_press_translation_z"
+        android:layout_gravity="bottom|end"
+        android:layout_marginRight="@dimen/fab_margin"
+        android:layout_marginBottom="96dp"
+        app:fabSize="mini"
+        android:background="@color/colorAccent"
+        android:src="@drawable/ic_add_white"
+        app:rippleColor="@color/cardview_light_background"
+        app:elevation="@dimen/fab_elevation"
+        android:contentDescription="@string/action_share" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_save"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        app:pressedTranslationZ="@dimen/fab_press_translation_z"
+        android:layout_gravity="bottom|end"
+        android:layout_marginRight="@dimen/fab_margin"
+        android:layout_marginBottom="@dimen/fab_margin"
+        app:fabSize="normal"
+        android:background="@color/colorAccent"
+        android:src="@drawable/ic_save_white"
+        app:rippleColor="@color/cardview_light_background"
+        app:elevation="@dimen/fab_elevation"
+        android:contentDescription="@string/action_share" />
+
+</FrameLayout>

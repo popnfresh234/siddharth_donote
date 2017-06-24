@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#e0e0e0"
+
+    android:elevation="4dp"
+    android:layout_height="200dp"
+    >
+
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_label_black_18dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:textAppearance="?textAppearanceListItem"
+            android:text="Label"
+            android:textSize="16sp"
+            android:layout_gravity="center_vertical"
+            android:textStyle="bold"/>
+
+
+        <TextView
+            android:id="@+id/label_selected"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:textSize="16sp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textAppearance="?textAppearanceListItem"
+            android:text="NoLabel"/>
+
+        <ImageButton
+            android:id="@+id/edit_label_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:background="#e0e0e0"
+            android:src="@drawable/ic_edit_black_24dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/ic_color_lens_black_24dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?textAppearanceListItem"
+        android:layout_gravity="center_vertical"
+        android:text="Color"
+        android:textStyle="bold"/>
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="32dp"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal">
+
+
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButton_1"
+            android:background="@drawable/roundbutton"
+            android:padding="1dp"
+            />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButton_2"
+            android:background="@drawable/roundbutton"
+            android:padding="1dp"
+            android:layout_marginStart="16dp"
+            />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButton_3"
+            android:background="@drawable/roundbutton"
+            android:padding="1dp"
+            android:layout_marginStart="16dp"
+            />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButton_4"
+            android:background="@drawable/roundbutton"
+            android:padding="1dp"
+            android:layout_marginStart="16dp"
+            />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButton_5"
+            android:background="@drawable/roundbutton"
+            android:padding="1dp"
+            android:layout_marginStart="16dp"
+            />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
+
+</FrameLayout>

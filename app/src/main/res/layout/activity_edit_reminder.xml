@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.example.sthakrey.donote.EditNoteActivity">
+
+        <LinearLayout
+            android:id="@+id/note_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="32dp"
+            android:orientation="vertical"
+            android:background="@color/colorAccent">
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_title"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="32dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/input_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Title"
+                    android:backgroundTint="#FFFFFF"
+                    android:textColorHint="#FFFFFF"
+                    android:textColorHighlight="#FFFFFF"
+                    android:shadowColor="#FFFFFF"
+                    android:foregroundTint="#FFFFFF"
+                    android:textColor="#FFFFFF"/>
+
+            </android.support.design.widget.TextInputLayout>
+            z
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_description"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/input_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="#FFFFFF"
+                    android:backgroundTint="#FFFFFF"
+                    android:textColorHighlight="#FFFFFF"
+                    android:shadowColor="#FFFFFF"
+                    android:foregroundTint="#FFFFFF"
+                    android:textColor="#FFFFFF"
+                    android:hint="Description" />
+
+            </android.support.design.widget.TextInputLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?textAppearanceListItem"
+                    android:text="Label"
+                    android:textStyle="bold"/>
+
+
+                <TextView
+                    android:id="@+id/label_selected"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?textAppearanceListItem"
+                    android:text="NoLabel"/>
+
+                <ImageButton
+                    android:id="@+id/edit_label_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:background="#FFFFFF"
+                    android:src="@drawable/ic_action_edit"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?textAppearanceListItem"
+                    android:text="Data and Time"
+                    android:textStyle="bold"/>
+
+
+                <TextView
+                    android:id="@+id/datetime_selected"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?textAppearanceListItem"
+                    android:text="NoLabel"/>
+
+                <ImageButton
+                    android:id="@+id/edit_datetime_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:background="#FFFFFF"
+                    android:src="@drawable/ic_action_edit"/>
+
+            </LinearLayout>
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?textAppearanceListItem"
+                android:layout_marginTop="16dp"
+                android:text="Color"
+                android:paddingBottom="16dp"
+                android:textStyle="bold"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="horizontal">
+
+
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageButton_1"
+                    android:background="@drawable/roundbutton"
+                    android:padding="1dp"
+                    />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageButton_2"
+                    android:background="@drawable/roundbutton"
+                    android:padding="1dp"
+                    android:layout_marginStart="16dp"
+                    />
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageButton_3"
+                    android:background="@drawable/roundbutton"
+                    android:padding="1dp"
+                    android:layout_marginStart="16dp"
+                    />
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageButton_4"
+                    android:background="@drawable/roundbutton"
+                    android:padding="1dp"
+                    android:layout_marginStart="16dp"
+                    />
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageButton_5"
+                    android:background="@drawable/roundbutton"
+                    android:padding="1dp"
+                    android:layout_marginStart="16dp"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="32dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="ImageAttachment"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:textAppearance="?textAppearanceListItem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ImageButton
+                    android:id = "@+id/take_image"
+                    android:src="@drawable/ic_action_camera"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <ImageView
+                android:id= "@+id/myphoto"
+                android:background="#000000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_save"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        app:pressedTranslationZ="@dimen/fab_press_translation_z"
+        android:layout_gravity="bottom|end"
+        android:layout_marginRight="@dimen/fab_margin"
+        android:layout_marginBottom="@dimen/fab_margin"
+        app:fabSize="normal"
+        android:background="@color/colorAccent"
+        android:src="@drawable/ic_action_accept"
+        app:rippleColor="@color/cardview_light_background"
+        app:elevation="@dimen/fab_elevation"
+        android:contentDescription="@string/action_share" />
+</FrameLayout>

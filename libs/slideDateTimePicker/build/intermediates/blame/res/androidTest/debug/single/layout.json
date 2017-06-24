@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "C:\\DoNote\\libs\\slideDateTimePicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\fragment_time.xml",
+        "source": "C:\\DoNote\\libs\\slideDateTimePicker\\build\\intermediates\\bundles\\debug\\res\\layout\\fragment_time.xml"
+    },
+    {
+        "merged": "C:\\DoNote\\libs\\slideDateTimePicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\fragment_date.xml",
+        "source": "C:\\DoNote\\libs\\slideDateTimePicker\\build\\intermediates\\bundles\\debug\\res\\layout\\fragment_date.xml"
+    },
+    {
+        "merged": "C:\\DoNote\\libs\\slideDateTimePicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\custom_tab.xml",
+        "source": "C:\\DoNote\\libs\\slideDateTimePicker\\build\\intermediates\\bundles\\debug\\res\\layout\\custom_tab.xml"
+    },
+    {
+        "merged": "C:\\DoNote\\libs\\slideDateTimePicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\slide_date_time_picker.xml",
+        "source": "C:\\DoNote\\libs\\slideDateTimePicker\\build\\intermediates\\bundles\\debug\\res\\layout\\slide_date_time_picker.xml"
+    }
+]

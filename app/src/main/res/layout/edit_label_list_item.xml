@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="?listPreferredItemHeight"
+    android:layout_marginTop="16dp"
+    >
+
+    <RadioButton
+        android:id="@+id/radiobutton"
+        android:layout_width="32dp"
+        android:layout_height="32dp" />
+
+    <TextView
+        android:layout_marginLeft="32dp"
+        android:id="@+id/label_text"
+        android:layout_width="wrap_content"
+        android:textAppearance="?textAppearanceListItem"
+        android:textSize="22sp"
+        android:textColor="#000000"
+        android:alpha="0.87"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

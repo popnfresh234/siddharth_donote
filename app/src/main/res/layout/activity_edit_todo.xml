@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:id="@+id/todo_header"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent" android:layout_width="match_parent">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/mytoolbar"
+        android:background="?attr/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:elevation="4dp"
+        android:fitsSystemWindows="true"
+        style="@style/ThemeOverlay.AppCompat.Dark"
+        />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="?actionBarSize"
+            >
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_title"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="32dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/input_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Title"
+                             android:textColor="#000000"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id ="@+id/task_recylerview"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_height="wrap_content"
+                />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/add_newtask_button"
+                    android:background="@drawable/small_roundbutton"
+
+                    android:layout_marginStart="16dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add new task"
+                    android:layout_gravity="center_vertical"
+                    android:textAppearance="?textAppearanceListItem"
+                    android:textSize="18sp"/>
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+    <FrameLayout
+        android:id="@+id/settings_container"
+        android:layout_width="match_parent"
+        android:layout_gravity="bottom"
+        android:layout_height="wrap_content"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_settings"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        app:pressedTranslationZ="@dimen/fab_press_translation_z"
+        android:layout_gravity="bottom|end"
+        android:layout_marginRight="@dimen/fab_margin"
+        android:layout_marginBottom="96dp"
+        app:fabSize="mini"
+        android:background="#FFEB3B"
+        android:src="@drawable/ic_settings_white"
+        app:rippleColor="@color/cardview_light_background"
+        app:elevation="@dimen/fab_elevation"
+        android:contentDescription="@string/action_share" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_save"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        app:pressedTranslationZ="@dimen/fab_press_translation_z"
+        android:layout_gravity="bottom|end"
+        android:layout_marginRight="@dimen/fab_margin"
+        android:layout_marginBottom="@dimen/fab_margin"
+        app:fabSize="normal"
+        android:background="#FFEB3B"
+        android:src="@drawable/ic_save_white"
+        app:rippleColor="@color/cardview_light_background"
+        app:elevation="@dimen/fab_elevation"
+        android:contentDescription="@string/action_share" />
+</FrameLayout>

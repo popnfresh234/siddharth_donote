@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_notes"
+            android:title="@string/nav_notes" />
+        <item
+            android:id="@+id/nav_todo"
+            android:title="@string/nav_todos" />
+        <item
+            android:id="@+id/nav_reminders"
+            android:title="@string/nav_reminders" />
+
+        </group>
+
+    <item android:title="Labels">
+          <menu>
+            <item
+                android:id="@+id/nav_lables"
+                android:title="@string/label_personal" />
+            <item
+                android:id="@+id/nav_settings"
+                android:title="@string/label_work" />
+          </menu>
+    </item>
+</menu>
